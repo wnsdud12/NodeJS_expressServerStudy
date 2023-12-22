@@ -1,5 +1,6 @@
 var express = require('express');
-var loginCheck = require('../middleware/loginCheck')
+var loginCheck = require('../middleware/loginCheck');
+const upload = require('../middleware/imageUpload');
 var router = express.Router();
 
 let arr = [];
@@ -81,6 +82,16 @@ router.delete('/delete/:id', (req, res) => {
       code: res.statusCode
     },
     result: arr // response에 data도 같이 담아서 보낸다.
+  })
+});
+
+// Multipart Method
+
+router.post("/upload", upload.single('image'), (req, res) => {
+  const file = req.file;
+  console.log(file);
+  res.status(200).json({
+    message : "upload success",
   })
 })
 
