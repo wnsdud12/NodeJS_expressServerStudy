@@ -1,7 +1,7 @@
 var express = require('express');
-var loginCheck = require('../middleware/loginCheck');
-const upload = require('../middleware/imageUpload');
-const db = require('../database/dbConnect')
+var loginCheck = require('./../../middleware/loginCheck');
+const upload = require('./../../middleware/imageUpload');
+const db = require('./../../database/dbConnect')
 var router = express.Router();
 
 let arr = [];
