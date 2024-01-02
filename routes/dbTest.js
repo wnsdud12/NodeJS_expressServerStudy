@@ -23,10 +23,10 @@ router.post('/', async (req, res) => {
   }
 });
 
-// 게시물 제목으로 조회
+// 게시물 전체 조회
 router.get('/', async (req, res) => {
   try {
-    const result = await postModel.find({ title : "first" });
+    const result = await postModel.find({});
     res.status(200).json({
       message: "read success",
       data: result,
