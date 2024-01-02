@@ -1,6 +1,6 @@
 const loginCheck = (req, res, next) => {
   console.log("begin loginCheck");
-  const userLogin = true;
+  const userLogin = false;
   if (userLogin) {
     next();
   } else {
