@@ -1,0 +1,4 @@
+
+const getUserData = (req, res) => {
+  
+}
