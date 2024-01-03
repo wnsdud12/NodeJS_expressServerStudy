@@ -1,4 +1,3 @@
-const postModel = require("./postingModel");
 const api = require('./postingController')
 var express = require('express');
 var router = express.Router();
