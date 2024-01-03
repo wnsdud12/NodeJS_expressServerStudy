@@ -33,7 +33,7 @@ const getPostingList = async (req, res) => {
       message: error,
     });
   }
-}
+};
 
 const getPostingById = async (req, res) => {
   const { id } = req.params;
@@ -48,7 +48,7 @@ const getPostingById = async (req, res) => {
       message: error,
     });
   }
-}
+};
 
 const updatePosting = async (req, res) => {
   const {id} = req.params;
@@ -70,7 +70,7 @@ const updatePosting = async (req, res) => {
       message: error,
     });
   }
-}
+};
 
 const deletePosting = async (req, res) => {
   const { id } = req.params;
@@ -84,7 +84,7 @@ const deletePosting = async (req, res) => {
       message: error
     });
   }
-}
+};
 
 module.exports = {
   createPosting,
